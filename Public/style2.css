@@ -7,14 +7,15 @@ body{
 .contain{
     display: flex;
     flex-direction: column;
-    margin-left: 30vw;
-    margin-top: 20vh;
+    margin-left: 37vw;
+    margin-top: 8vh;
     justify-content: space-around;
     align-items: center;
-    width: 700px;
-    height: 460px;
+    width: 400px;
+    height: 260px;
     background-color: white;
     border-radius: 5%;
+    border: 10px double black;
 }
 
 .form h1{
@@ -31,6 +32,7 @@ body{
 input:focus{
     outline: none;
 }
+
 #btn{
     background-color: #264348;
     width: 300px;
@@ -39,7 +41,7 @@ input:focus{
     color: #fff;
     border: none;
     cursor: pointer;
-
+    border: 5px double white;
     transition: background-color  330ms ;
   }
 #btn:hover{
@@ -61,4 +63,16 @@ a:visited{
 }
 a:hover{
     color: black;
+}
+
+/*=== NASLOVI (h1, h2, h3...)===*/
+.naslov{
+    margin-left: 29vw;
+    margin-top: 10vh;
+    color: whitesmoke;
+    font-size: 60px;
+}
+
+.login-naslov{
+    font-size: 25px;
 }
