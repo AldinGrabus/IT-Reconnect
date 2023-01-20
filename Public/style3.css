@@ -277,18 +277,34 @@ textarea {
 
 .unos1{
   background-color: aliceblue;
-  width: 1350px;
-  height: 850px;
+  width: 1050px;
+  height: 550px;
   border: #000 double 7px;
   border-radius: 20px;
   margin-left: 350px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
+  margin-top: 100px;
 }
 
 .unos2{
+  background-color: aliceblue;
+  width: 350px;
+  height: 350px;
+  border: #000 double 7px;
+  border-radius: 20px;
+  margin-left: 270px;
+  margin-top: 30px;
+}
+
+.crta2{
+  background-color: rgb(0, 0, 0);
+  width: 20px;
+  height: 250px;
+  border: white double 7px;
+  border-radius: 20px;
+}
+
+
+.admin-informacije{
   background-color: aliceblue;
   width: 350px;
   height: 450px;
@@ -307,6 +323,29 @@ textarea {
   border-radius: 20px;
 }
 
+.Dodaj2{
+  background-color: #264348;
+  color: white;
+  width: 200px; 
+  height: 50px;
+  border-radius: 10px; 
+  margin-top: 50px; 
+  border: rgb(255, 255, 255) double 7px;
+  margin-left: 420px;
+}
+
+.Dodaj2:hover{
+  background-color: white;
+  color: #264348;
+  width: 220px; 
+  height: 50px;
+  border-radius: 10px; 
+  margin-top: 50px; 
+  border: #264348 double 7px;
+  margin-left: 410px;
+  transition: 0.4s;
+}
+
 .flex2{
   display: flex;
   justify-content: space-evenly;
@@ -322,10 +361,14 @@ textarea {
 
 .inputi{
   width: 100px;
+  border-radius: 10px;
 }
 
 .uflex1{
   margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
 /*===Dodano===*/
