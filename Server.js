@@ -27,7 +27,7 @@ const connection = mysql.createConnection({
 
 //Rute
 app.get('/', (req, res) => {
-    res.sendFile('/home/farukb/Desktop/Reconnect/Views/Odabir.html');
+    res.sendFile('IT-Reconnect\Views\Odabir.html');
   });
 
 app.get('/pocetna-admin', (req, res) => {
