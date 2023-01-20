@@ -27,11 +27,15 @@ const connection = mysql.createConnection({
 
 //Rute
 app.get('/', (req, res) => {
-    res.sendFile('IT-Reconnect\Views\Odabir.html');
+  res.sendFile(`${__dirname}/Views/Odabir.html`);
   });
 
+app.get('/admin-login', (req, res) => {
+  res.sendFile(`${__dirname}/Views/AdminLogin.html`);
+});
+
 app.get('/pocetna-admin', (req, res) => {
-    res.sendFile('/home/farukb/Desktop/Reconnect/Views/PocetnaAdmin.html');
+  res.sendFile(`${__dirname}/Views/PocetnaAdmin.html`);
 });
 
 app.get('/pocetna-skola', (req, res) => {
@@ -60,7 +64,7 @@ app.post('/adminlogin', function(request, response) {
         
           request.session.loggedin = true;
           request.session.username = user;
-          console.log('input')
+
           response.redirect('/pocetna-admin');
         } else {
           response.send('Netačan username ili password');

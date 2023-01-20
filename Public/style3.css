@@ -250,3 +250,63 @@ textarea {
   background-color: #264348;
   color: #fff;
 }
+
+/*===Naslovi sekcija===*/
+.PrvaSekcijaHeader{
+  color:#f1f1f1;
+  margin-left: 270px;
+  font-size: 40px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.DrugaSekcijaHeader{
+  color:#f1f1f1;
+  margin-left: 270px;
+  font-size: 50px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.TrecaSekcijaHeader{
+  color:#f1f1f1;
+  margin-left: 270px;
+  font-size: 70px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/*===Unos na sekcijama===*/
+
+.unos1{
+  background-color: aliceblue;
+  width: 1350px;
+  height: 850px;
+  border: #000 double 7px;
+  border-radius: 20px;
+  margin-left: 350px;
+  margin-top: 20px;
+}
+
+.uflex1{
+  margin-top: 50px;
+}
+
+/*===Dodano===*/
+.dodane-skole{
+  background-color: aliceblue;
+  width: 1350px;
+  height: 80px;
+  border: #000 double 4px;
+  border-radius: 20px;
+  margin-left: 300px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.crta{
+  background-color: rgb(0, 0, 0);
+  width: 5px;
+  height: 70px;
+  border: #000 double 2px;
+  background-color: aliceblue;
+}

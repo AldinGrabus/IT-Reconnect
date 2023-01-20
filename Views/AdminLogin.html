@@ -10,12 +10,13 @@
 </head>
 
 <body>
+    <h1 class = "naslov">Prijava</h1>
     <div class="contain">
         <form class="form" action = "/adminlogin" method = "POST">
-            <h1>Admin Login</h1>
+            <h1 style = "margin-left: 40px;">Admin Login</h1>
             <div class="fields">
                 <div class="ime">
-                    <p>Unesi admin username:</p>
+                    <p style = "color: black">Unesite admin username: </p>
                     <input 
                     type="text" 
                     id="username" 
@@ -23,7 +24,7 @@
                     placeholder="Ime">
                 </div>
                 <div class="prezime">
-                    <p>Unesi lozinku:</p>
+                    <p style = "color: black">Unesi admin lozinku:</p>
                     <input type="password" id="password" name="password" placeholder="Lozinka">
                 </div>
                 <button type = "submit" id="btn">Pošalji</button>
