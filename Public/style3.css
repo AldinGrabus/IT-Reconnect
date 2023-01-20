@@ -282,11 +282,50 @@ textarea {
   border: #000 double 7px;
   border-radius: 20px;
   margin-left: 350px;
-  margin-top: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.unos2{
+  background-color: aliceblue;
+  width: 350px;
+  height: 450px;
+  border: #000 double 7px;
+  border-radius: 20px;
+  margin-left: 270px;
+  margin-top: 30px;
+}
+
+.Dodaj{
+  background-color: #264348;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border: #000 double 7px;
+  border-radius: 20px;
+}
+
+.flex2{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.linija{
+  height: 47vw;
+  border: #000 double 7px;
+  background-color: white;
+  width: 20px;
+}
+
+.inputi{
+  width: 100px;
 }
 
 .uflex1{
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 /*===Dodano===*/
