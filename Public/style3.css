@@ -469,7 +469,12 @@ textarea {
   border-radius: 10px;
   margin-left: 300px;
   margin-top: 50px;
-
   display: none;
+}
+
+.vise-skole-dugmadi{
+  display: flex; 
+  justify-content: row;
+  margin-top: 50px;
 }
 
