@@ -1,5 +1,16 @@
 const btn = document.querySelector("#btn")
 
+const dugmeTravnik = document.getElementById('dugmeTravnik');
+const viseTravnik = document.getElementById('viseTravnik');
+
+
+dugmeTravnik.onclick = function () {
+  if (viseTravnik.style.display !== "none") {
+    viseTravnik.style.display = "none";
+  } else {
+    viseTravnik.style.display = "block";
+  }
+};
 
 function getInputValue(e) { 
      e.preventDefault()
@@ -10,4 +21,6 @@ function getInputValue(e) {
      input1.value = ""
      input2.value = ""
    }
+
+
 btn.addEventListener("click",getInputValue)
