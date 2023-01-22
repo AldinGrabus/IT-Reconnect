@@ -10,8 +10,6 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("Public"));
 
-
-app.use(express.static(path.join(__dirname, "js")));
 //Sessije
 app.use(session({
   secret : 'itreconnect',
