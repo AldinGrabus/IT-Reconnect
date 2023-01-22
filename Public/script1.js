@@ -1,26 +1,14 @@
-const btn = document.querySelector("#btn")
+
+/*Kod za prikazivanje dodatnih informacija o školama */
 
 const dugmeTravnik = document.getElementById('dugmeTravnik');
 const viseTravnik = document.getElementById('viseTravnik');
 
 
 dugmeTravnik.onclick = function () {
-  if (viseTravnik.style.display !== "none") {
-    viseTravnik.style.display = "none";
-  } else {
+  if (viseTravnik.style.display !== "block") {
     viseTravnik.style.display = "block";
+  } else {
+    viseTravnik.style.display = "none";
   }
 };
-
-function getInputValue(e) { 
-     e.preventDefault()
-     let input1 = document.getElementById("input1");
-     let input2 = document.getElementById("input2");
-     console.log("Username: " + input1.value)
-     console.log("Password: " + input2.value)
-     input1.value = ""
-     input2.value = ""
-   }
-
-
-btn.addEventListener("click",getInputValue)

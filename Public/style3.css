@@ -463,10 +463,13 @@ textarea {
 
 .vise-skola{
   background-color: aliceblue;
-  width: 400px;
+  width: 1000px;
   height: 450px;
   border: #000 double 7px;
   border-radius: 10px;
-  margin-left: 260px;
-  margin-top: 200px;
+  margin-left: 300px;
+  margin-top: 50px;
+
+  display: none;
 }
+
