@@ -115,13 +115,13 @@
         <h1 style = "margin-top: 20px; margin-left: 50px;"><u>Unesite podatke profesora</u></h1>
         <div class = "uflex2">
           <h3>Unesite ID profesora: </h3>
-          <input class = "inputi">
+          <input type="number" class = "inputi" id="profID">
           <h3>Unesite naziv profesora: </h3>
-          <input class = "inputi">
+          <input class = "inputi" id="profIme">
           <h3>Unesite časova u normi profesora: </h3>
-          <input class = "inputi">
+          <input class = "inputi" id="profNorma">
           <br>
-          <button class = "Dodaj">
+          <button type="number" class = "Dodaj" id="dodajProf">
             Dodaj
           </button>
         </div>
@@ -133,10 +133,10 @@
         margin-left: 70px;
         font-size: 40px;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><u>Uneseni profesori</u></h2>
-        <div class = "dodani-profesori">
+        <div  class = "dodani-profesori">
           <h1 style = "margin-top: 10px;">ID: 1</h1>
           <div class = "crta"></div>
-          <h1 style = "margin-top: 10px;">Naziv: Mujo Mujic</h1>
+          <h1 style = "margin-top: 10px;">Ime: Mujo Mujic</h1>
           <div class = "crta"></div>
           <h1 style = "margin-top: 10px;">Broj časova u normi: 18</h1>
           <div class = "crta"></div>
@@ -145,16 +145,16 @@
         <div style ="margin-top: 10px;" class = "dodani-profesori">
           <h1 style = "margin-top: 10px;">ID: 2</h1>
           <div class = "crta"></div>
-          <h1 style = "margin-top: 10px;">Naziv: Suljo Suljic</h1>
+          <h1 style = "margin-top: 10px;">Ime: Suljo Suljic</h1>
           <div class = "crta"></div>
           <h1 style = "margin-top: 10px;">Broj časova u normi: 25</h1>
           <div class = "crta"></div>
           <button class = "Ukloni">Ukloni</button>
         </div>
         <div style ="margin-top: 10px;" class = "dodani-profesori">
-          <h1 style = "margin-top: 10px;">ID: 2</h1>
+          <h1 style = "margin-top: 10px;">ID: 3</h1>
           <div class = "crta"></div>
-          <h1 style = "margin-top: 10px;">Naziv: Haso Hasic</h1>
+          <h1 style = "margin-top: 10px;">Ime: Haso Hasic</h1>
           <div class = "crta"></div>
           <h1 style = "margin-top: 10px;">Broj časova u normi: 35</h1>
           <div class = "crta"></div>
@@ -172,8 +172,8 @@
         <h1 style = "margin-top: 20px; margin-left: 50px;"><u>Unesite podatke o kabinetu</u></h1>
         <div class = "uflex2">
           <h3>Unesite naziv kabineta: </h3>
-          <input class = "inputi">
-          <button class = "Dodaj3">
+          <input class = "inputi" id="kabinetIme">
+          <button class = "Dodaj3" id="dodajKab">
             Dodaj
           </button>
         </div>
@@ -185,7 +185,7 @@
         font-size: 40px;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><u>Kabineti</u></h2>
         <div style = "display: flex; justify-content: space-evenly;">
-          <div>
+          <div class="lijeviDiv">
             <div class = "dodani-kabineti">
               <h2 style = "margin-top: 10px;">ID: 1</h2>
               <div class = "crta"></div>
@@ -194,37 +194,37 @@
               <button class = "Ukloni">Ukloni</button>
             </div>
             <div class = "dodani-kabineti">
-              <h1 style = "margin-top: 10px;">ID: 1</h1>
+              <h1 style = "margin-top: 10px;">ID: 3</h1>
               <div class = "crta"></div>
               <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
               <div class = "crta"></div>
               <button class = "Ukloni">Ukloni</button>
             </div>
             <div class = "dodani-kabineti">
-              <h1 style = "margin-top: 10px;">ID: 1</h1>
+              <h1 style = "margin-top: 10px;">ID: 5</h1>
               <div class = "crta"></div>
               <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
               <div class = "crta"></div>
               <button class = "Ukloni">Ukloni</button>
             </div>
           </div>
-          <div>
+          <div class="desniDiv">
             <div style="margin-left: 20px;" class = "dodani-kabineti">
-              <h2 style = "margin-top: 10px;">ID: 1</h2>
+              <h2 style = "margin-top: 10px;">ID: 2</h2>
               <div class = "crta"></div>
               <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
               <div class = "crta"></div>
               <button class = "Ukloni">Ukloni</button>
             </div>
             <div style="margin-left: 20px;" class = "dodani-kabineti">
-              <h2 style = "margin-top: 10px;">ID: 1</h2>
+              <h2 style = "margin-top: 10px;">ID: 4</h2>
               <div class = "crta"></div>
               <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
               <div class = "crta"></div>
               <button class = "Ukloni">Ukloni</button>
             </div>
             <div style="margin-left: 20px;" class = "dodani-kabineti">
-              <h2 style = "margin-top: 10px;">ID: 1</h2>
+              <h2 style = "margin-top: 10px;">ID: 6</h2>
               <div class = "crta"></div>
               <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
               <div class = "crta"></div>
