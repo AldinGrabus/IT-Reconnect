@@ -15,6 +15,10 @@ const viseTravnik = document.getElementById('viseTravnik');
 const viseTravnik1 = document.getElementById('viseTravnik1');
 const viseVakuf = document.getElementById('viseVakuf');
 
+
+const DodajProf = document.getElementById('Dodaj-Raspored-Profesor');
+const DodajKab = document.getElementById('Dodaj-Raspored-Profesor');
+
 /*Prikazi*/
 
 dugmeTravnik.onclick = function () {viseTravnik.style.display = "block";};
