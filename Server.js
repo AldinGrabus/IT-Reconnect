@@ -42,8 +42,8 @@ app.get('/pocetna-skola', (req, res) => {
   res.sendFile('/home/farukb/Desktop/Reconnect/Views/PocetnaSkola.html');
 });
 
-app.get('/skolalogin', (req, res) => {
-  res.sendFile('/home/farukb/Desktop/Reconnect/Views/SkolaLogin.html');
+app.get('/skola-login', (req, res) => {
+  res.sendFile(`${__dirname}/Views/SkolaLogin.html`);
 });
 
 app.get('/adminlogin', (req, res) => {
@@ -81,11 +81,11 @@ app.post('/adminlogin', function(request, response) {
 
 
 app.post('/skolalogin', function(request, response) {
-  const  user = request.body.username;
-  const pass = request.body.password;
+  const  user = request.body.susername;
+  const pass = request.body.spassword;
 
   if (user && pass) {
-    const sql = `SELECT * FROM adminlogin WHERE username = "${user}" AND password = "${pass}"`;
+    const sql = `SELECT * FROM skolalogin WHERE username = "${user}" AND password = "${pass}"`;
     
     connection.query(sql, function(error, results) {
       if (error) throw error;
@@ -93,8 +93,8 @@ app.post('/skolalogin', function(request, response) {
       
         request.session.loggedin = true;
         request.session.username = user;
-        console.log('input')
-        response.redirect('/pocetna');
+
+        response.redirect('/pocetna-admin');
       } else {
         response.send('Netačan username ili password');
       }			
