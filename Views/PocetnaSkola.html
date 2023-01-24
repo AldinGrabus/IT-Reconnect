@@ -7,7 +7,7 @@
 
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <link rel="stylesheet" href="/style3.css">
+  <link rel="stylesheet" href="style3.css">
 
   <title> Skola-pocetna </title>
 
@@ -83,26 +83,79 @@
     <h1 class = "PrvaSekcijaHeader"><u>Generisanje rasporeda</u></h1>
     <div style = "display: flex; margin-left: 100px; margin-top: 30px;">
       <button id ="Dodaj-Raspored-Profesor" class = "generisi-raspored">
-        <h1 class = "dodaj-header">Dodaj raspored za profesore</h1>
-      </button>
-      <button style = "margin-left: 100px;"class = "generisi-raspored">
-        <h1 class = "dodaj-header">Dodaj raspored za kabinete</h1>
+        <h1 class = "dodaj-header">Generiši raspored</h1>
       </button>
     </div>
+    <div class="raspored">
+      <div class="col">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+        <div class="c5"></div>
+        <div class="c6"></div>
+        <div class="c7"></div>
+      </div>
+      <div class="col">
+        <div class="c8"></div>
+        <div class="c9"></div>
+        <div class="c10"></div>
+        <div class="c11"></div>
+        <div class="c12"></div>
+        <div class="c13"></div>
+        <div class="c14"></div>
+      </div>
+      <div class="col">
+        <div class="c15"></div>
+        <div class="c16"></div>
+        <div class="c17"></div>
+        <div class="c18"></div>
+        <div class="c19"></div>
+        <div class="c20"></div>
+        <div class="c21"></div>
+      </div>
+      <div class="col">
+        <div class="c22"></div>
+        <div class="c23"></div>
+        <div class="c24"></div>
+        <div class="c25"></div>
+        <div class="c26"></div>
+        <div class="c27"></div>
+        <div class="c28"></div>
+      </div>
+      <div class="col">
+        <div class="c29"></div>
+        <div class="c30"></div>
+        <div class="c31"></div>
+        <div class="c32"></div>
+        <div class="c33"></div>
+        <div class="c34"></div>
+        <div class="c35"></div>
+      </div>
+    </div>
 
-    <div style="display: none;" class = "RASPORED">
-      <h1 style = "margin-top: 20px; margin-left: 50px;"><u>Unesite podatke profesora</u></h1>
-      <div class = "uflex2">
+    <h1 class="skloniOvo" style = "margin-top: 20px; margin-left: 300px; color: white;"><u>Unesite podatke profesora</u></h1>
+    <div style="margin-left: 250px; color: white; display: none;" class = "RASPORED">
+      <div class = "uflex2" id="dodavanjeProf">
         <h3>Unesite ID profesora: </h3>
-        <input class = "inputi">
-        <h3>Unesite naziv profesora: </h3>
-        <input class = "inputi">
+        <input class = "inputi profID">
+        <h3>Unesite ime profesora: </h3>
+        <input class = "inputi proff">
         <h3>Unesite časova u normi profesora: </h3>
-        <input class = "inputi">
+        <input class = "inputi broj">
+        <h3>Unesite kabinet: </h3>
+        <input class = "inputi kabinet">
         <br>
-        <button class = "Dodaj">
+        <button class = "Dodaj" id="dodajProfRas">
           Dodaj
         </button>
+        <button class = "main-btn Dodaj" id="" onclick="kraj()">
+          Generiši
+        </button>
+      </div>
+      <div class="display" style="margin-left: 70px; margin-top: 40px;">
+        <h1>Dodano</h1>
+
       </div>
     </div>
   </section>
@@ -335,7 +388,7 @@
     </footer>
   </section>
 
-  <script src="/script1.js"></script>
+  <script src="script5.js"></script>
 
 </body>
 </html>
