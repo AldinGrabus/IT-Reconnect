@@ -160,6 +160,10 @@ header .logo-text .header-text {
   background-color: lightblue;
 }
 
+.druga1-sekcija {
+  background-color: #343a40;
+}
+
 .treca-sekcija {
   background-color: #2b2d42;
 }
@@ -296,6 +300,17 @@ textarea {
   margin-top: 30px;
 }
 
+.unos3{
+  background-color: aliceblue;
+  width: 400px;
+  height: 250px;
+  border: #000 double 7px;
+  border-radius: 20px;
+  margin-left: 270px;
+  margin-top: 30px;
+}
+
+
 .crta2{
   background-color: rgb(0, 0, 0);
   width: 20px;
@@ -326,6 +341,18 @@ textarea {
   margin-top: 40px;
   margin-left: 30px;
 }
+
+.Dodaj3{
+  background-color: #264348;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border: rgb(255, 255, 255) double 7px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
 
 .Ukloni{
   background-color: #e4110a;
@@ -438,6 +465,19 @@ textarea {
   justify-content: space-around;
 }
 
+.dodani-kabineti{
+  background-color: aliceblue;
+  width: 450px;
+  height: 45px;
+  border: #000 double 4px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .dodane-skole:hover{
   background-color: aliceblue;
   width: 1380px;
@@ -478,3 +518,28 @@ textarea {
   margin-top: 50px;
 }
 
+.generisi-raspored{
+  width: 220px;
+  height: 70px;
+  margin-left: 200px;
+  background-color: aliceblue;
+  border: #000 2px solid;
+  color: #000;
+  text-align: center;
+}
+
+.generisi-raspored:hover{
+  width: 240px;
+  height: 80px;
+  margin-left: 200px;
+  background-color: aliceblue;
+  border: #000 2px solid;
+ 
+  transition: 0.5s;
+}
+
+.dodaj-header{
+  color: #000;
+  margin: 10px;
+  font-size: 20px;
+}

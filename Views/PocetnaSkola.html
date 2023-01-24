@@ -9,21 +9,10 @@
 
   <link rel="stylesheet" href="/style3.css">
 
-  <title> IT Reboot Projekat </title>
+  <title> Skola-pocetna </title>
 
 </head>
 <body>
-
-  <nav>
-    <center>
-      <!-- <img src="slike/logo1.png" alt="main_logo" class="logo" onclick="document.getElementById('sekcija1').scrollIntoView()"> -->
-
-
-
-      <!-- <div class="container nav-underline"></div> -->
-    </center>
-    
-  </nav>
 
   <!-- Sidebar  -->
 
@@ -49,43 +38,31 @@
           <li class="nav-link">
             <a href="#sekcija1">
               <i class='bx bxs-home ikonice'></i>
-              <span class="text nav-text">Home</span>
-            </a>
-          </li>
-          <li class="nav-link">
-            <a href="#sekcija1">
-              <i class='bx bxs-home ikonice'></i>
-              <span class="text nav-text">Dodaj školu</span>
+              <span class="text nav-text">Početna</span>
             </a>
           </li>
           <li class="nav-link">
             <a href="#sekcija2">
               <i class='bx bxs-school ikonice'></i>
-              <span class="text nav-text">Škola</span>
+              <span class="text nav-text">Dodaj raspored</span>
             </a>
           </li>
           <li class="nav-link">
             <a href="#sekcija3">
               <i class='bx bxs-face ikonice'></i>
-              <span class="text nav-text">Profesor</span>
+              <span class="text nav-text">Profesori</span>
             </a>
           </li>
           <li class="nav-link">
             <a href="#sekcija4">
               <i class='bx bxs-book ikonice'></i>
-              <span class="text nav-text">Norma</span>
+              <span class="text nav-text">Kabinet/Učionice</span>
             </a>
           </li>
           <li class="nav-link">
             <a href="#sekcija5">
               <i class='bx bxs-book ikonice'></i>
-              <span class="text nav-text">Predmet</span>
-            </a>
-          </li>
-          <li class="nav-link">
-            <a href="#sekcija6">
-              <i class='bx bxs-chalkboard ikonice'></i>
-              <span class="text nav-text">Učionica</span>
+              <span class="text nav-text">Norma</span>
             </a>
           </li>
           <h1></h1>
@@ -99,20 +76,236 @@
   <!-- Sekcije  -->
 
   <section class="sve-sekcije prva-sekcija" id="sekcija1">
+    <h1 style ="font-size: 25px;" class = "PrvaSekcijaHeader">Ulogovani ste kao korisnik: skola1 (MSTS Travnik)</h1>
   </section>
   
-  <section class="sve-sekcije druga-sekcija" id="sekcija2">
+  <section class="sve-sekcije druga1-sekcija" id="sekcija2">
+    <h1 class = "PrvaSekcijaHeader"><u>Generisanje rasporeda</u></h1>
+    <div style = "display: flex; margin-left: 100px; margin-top: 30px;">
+      <button class = "generisi-raspored">
+        <h1 class = "dodaj-header">Dodaj raspored za profesore</h1>
+      </button>
+      <button style = "margin-left: 100px;"class = "generisi-raspored">
+        <h1 class = "dodaj-header">Dodaj raspored za kabinete</h1>
+      </button>
+    </div>
+
+    <div class = "unos2">
+      <h1 style = "margin-top: 20px; margin-left: 50px;"><u>Unesite podatke profesora</u></h1>
+      <div class = "uflex2">
+        <h3>Unesite ID profesora: </h3>
+        <input class = "inputi">
+        <h3>Unesite naziv profesora: </h3>
+        <input class = "inputi">
+        <h3>Unesite časova u normi profesora: </h3>
+        <input class = "inputi">
+        <br>
+        <button class = "Dodaj">
+          Dodaj
+        </button>
+      </div>
+    </div>
   </section>
   
   <section class="sve-sekcije treca-sekcija" id="sekcija3">
+    <div></div>
+    <h1 class = "TrecaSekcijaHeader"><u>Dodaj profesora</u></h1>
+    <div class = "flex2">
+      <div class = "unos2">
+        <h1 style = "margin-top: 20px; margin-left: 50px;"><u>Unesite podatke profesora</u></h1>
+        <div class = "uflex2">
+          <h3>Unesite ID profesora: </h3>
+          <input class = "inputi">
+          <h3>Unesite naziv profesora: </h3>
+          <input class = "inputi">
+          <h3>Unesite časova u normi profesora: </h3>
+          <input class = "inputi">
+          <br>
+          <button class = "Dodaj">
+            Dodaj
+          </button>
+        </div>
+      </div>
+      <div class ="linija"></div>
+      <div class = "Uneseno">
+        <h2 style = "  
+        color:#f1f1f1;
+        margin-left: 70px;
+        font-size: 40px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><u>Uneseni profesori</u></h2>
+        <div class = "dodani-profesori">
+          <h1 style = "margin-top: 10px;">ID: 1</h1>
+          <div class = "crta"></div>
+          <h1 style = "margin-top: 10px;">Naziv: Mujo Mujic</h1>
+          <div class = "crta"></div>
+          <h1 style = "margin-top: 10px;">Broj časova u normi: 18</h1>
+          <div class = "crta"></div>
+          <button class = "Ukloni">Ukloni</button>
+        </div>
+        <div style ="margin-top: 10px;" class = "dodani-profesori">
+          <h1 style = "margin-top: 10px;">ID: 2</h1>
+          <div class = "crta"></div>
+          <h1 style = "margin-top: 10px;">Naziv: Suljo Suljic</h1>
+          <div class = "crta"></div>
+          <h1 style = "margin-top: 10px;">Broj časova u normi: 25</h1>
+          <div class = "crta"></div>
+          <button class = "Ukloni">Ukloni</button>
+        </div>
+        <div style ="margin-top: 10px;" class = "dodani-profesori">
+          <h1 style = "margin-top: 10px;">ID: 2</h1>
+          <div class = "crta"></div>
+          <h1 style = "margin-top: 10px;">Naziv: Haso Hasic</h1>
+          <div class = "crta"></div>
+          <h1 style = "margin-top: 10px;">Broj časova u normi: 35</h1>
+          <div class = "crta"></div>
+          <button class = "Ukloni">Ukloni</button>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="sve-sekcije cetvrta-sekcija" id="sekcija4">
-    
+    <div></div>
+    <h1 class = "TrecaSekcijaHeader"><u>Dodaj kabinet</u></h1>
+    <div class = "flex2">
+      <div class = "unos3">
+        <h1 style = "margin-top: 20px; margin-left: 50px;"><u>Unesite podatke o kabinetu</u></h1>
+        <div class = "uflex2">
+          <h3>Unesite naziv kabineta: </h3>
+          <input class = "inputi">
+          <button class = "Dodaj3">
+            Dodaj
+          </button>
+        </div>
+      </div>
+      <div class = "Uneseno">
+        <h2 style = "  
+        color:#f1f1f1;
+        margin-left: 70px;
+        font-size: 40px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><u>Kabineti</u></h2>
+        <div style = "display: flex; justify-content: space-evenly;">
+          <div>
+            <div class = "dodani-kabineti">
+              <h2 style = "margin-top: 10px;">ID: 1</h2>
+              <div class = "crta"></div>
+              <h2 style = "margin-top: 10px;">Naziv: kabinet1</h2>
+              <div class = "crta"></div>
+              <button class = "Ukloni">Ukloni</button>
+            </div>
+            <div class = "dodani-kabineti">
+              <h1 style = "margin-top: 10px;">ID: 1</h1>
+              <div class = "crta"></div>
+              <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
+              <div class = "crta"></div>
+              <button class = "Ukloni">Ukloni</button>
+            </div>
+            <div class = "dodani-kabineti">
+              <h1 style = "margin-top: 10px;">ID: 1</h1>
+              <div class = "crta"></div>
+              <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
+              <div class = "crta"></div>
+              <button class = "Ukloni">Ukloni</button>
+            </div>
+          </div>
+          <div>
+            <div style="margin-left: 20px;" class = "dodani-kabineti">
+              <h2 style = "margin-top: 10px;">ID: 1</h2>
+              <div class = "crta"></div>
+              <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
+              <div class = "crta"></div>
+              <button class = "Ukloni">Ukloni</button>
+            </div>
+            <div style="margin-left: 20px;" class = "dodani-kabineti">
+              <h2 style = "margin-top: 10px;">ID: 1</h2>
+              <div class = "crta"></div>
+              <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
+              <div class = "crta"></div>
+              <button class = "Ukloni">Ukloni</button>
+            </div>
+            <div style="margin-left: 20px;" class = "dodani-kabineti">
+              <h2 style = "margin-top: 10px;">ID: 1</h2>
+              <div class = "crta"></div>
+              <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
+              <div class = "crta"></div>
+              <button class = "Ukloni">Ukloni</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="sve-sekcije peta-sekcija" id="sekcija5">
-    
+    <div></div>
+    <h1 class = "TrecaSekcijaHeader"><u>Dodaj kabinet</u></h1>
+    <div class = "flex2">
+      <div class = "unos3">
+        <h1 style = "margin-top: 20px; margin-left: 50px;"><u>Unesite podatke o kabinetu</u></h1>
+        <div class = "uflex2">
+          <h3>Unesite naziv kabineta: </h3>
+          <input class = "inputi">
+          <button class = "Dodaj3">
+            Dodaj
+          </button>
+        </div>
+      </div>
+      <div class = "Uneseno">
+        <h2 style = "  
+        color:#f1f1f1;
+        margin-left: 70px;
+        font-size: 40px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><u>Kabineti</u></h2>
+        <div style = "display: flex; justify-content: space-evenly;">
+          <div>
+            <div class = "dodani-kabineti">
+              <h2 style = "margin-top: 10px;">ID: 1</h2>
+              <div class = "crta"></div>
+              <h2 style = "margin-top: 10px;">Naziv: kabinet1</h2>
+              <div class = "crta"></div>
+              <button class = "Ukloni">Ukloni</button>
+            </div>
+            <div class = "dodani-kabineti">
+              <h1 style = "margin-top: 10px;">ID: 1</h1>
+              <div class = "crta"></div>
+              <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
+              <div class = "crta"></div>
+              <button class = "Ukloni">Ukloni</button>
+            </div>
+            <div class = "dodani-kabineti">
+              <h1 style = "margin-top: 10px;">ID: 1</h1>
+              <div class = "crta"></div>
+              <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
+              <div class = "crta"></div>
+              <button class = "Ukloni">Ukloni</button>
+            </div>
+          </div>
+          <div>
+            <div style="margin-left: 20px;" class = "dodani-kabineti">
+              <h2 style = "margin-top: 10px;">ID: 1</h2>
+              <div class = "crta"></div>
+              <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
+              <div class = "crta"></div>
+              <button class = "Ukloni">Ukloni</button>
+            </div>
+            <div style="margin-left: 20px;" class = "dodani-kabineti">
+              <h2 style = "margin-top: 10px;">ID: 1</h2>
+              <div class = "crta"></div>
+              <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
+              <div class = "crta"></div>
+              <button class = "Ukloni">Ukloni</button>
+            </div>
+            <div style="margin-left: 20px;" class = "dodani-kabineti">
+              <h2 style = "margin-top: 10px;">ID: 1</h2>
+              <div class = "crta"></div>
+              <h1 style = "margin-top: 10px;">Naziv: kabinet1</h1>
+              <div class = "crta"></div>
+              <button class = "Ukloni">Ukloni</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="sve-sekcije sesta-sekcija" id="sekcija6">

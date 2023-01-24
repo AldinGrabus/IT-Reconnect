@@ -79,7 +79,7 @@ app.post('/adminlogin', function(request, response) {
 	  }
 });
 
-
+//Prijava za skolu
 app.post('/skolalogin', function(request, response) {
   const  user = request.body.susername;
   const pass = request.body.spassword;
