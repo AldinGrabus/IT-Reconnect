@@ -1,9 +1,10 @@
 /* Rasporedivanje casova konstante */
 
 class Raspored {
-  constructor(profIDD, profesor, brojCasova, kabinet){
+  constructor(profIDD, profesor, predmet, brojCasova, kabinet){
       this.profIDD = profIDD;
       this.profesor = profesor;
+      this.predmet = predmet;
       this.brojCasova = brojCasova;
       this.kabinet = kabinet;
   }
@@ -21,6 +22,7 @@ let dani = [
 ];
 let profIDD = document.querySelector(".profID");
 let profInput = document.querySelector(".proff");
+let predmet = document.querySelector(".predmet");
 let brojInput = document.querySelector(".broj");
 let kabinet = document.querySelector(".kabinet");
 
@@ -29,16 +31,18 @@ document.querySelector("#dodajProfRas").addEventListener("click", e=>{
       sedmicniCasovi+=parseInt(brojInput.value);
       if(sedmicniCasovi>=30 && sedmicniCasovi<=35) document.querySelector(".main-btn").style.display = "block";
         else document.querySelector(".main-btn").style.display = "none";
-      lista.push(new Raspored(profIDD.value, profInput.value, brojInput.value, kabinet.value));
+      lista.push(new Raspored(profIDD.value, profInput.value, predmet.value, brojInput.value, kabinet.value));
       document.querySelector(".display").innerHTML += `<div class="singleDisplay" >
        <h3>${profIDD.value}</h3> 
        <h3>${profInput.value}</h3> 
+       <h3>${predmet.value}</h3> 
        <h3>${brojInput.value}</h3>
        <h3>${kabinet.value}</h3>
        </div>`;
        console.log(profInput.value);
       profIDD.value = "";
       profInput.value = "";
+      predmet.value = "";
       brojInput.value = "";
       kabinet.value = "";
 });
@@ -57,7 +61,7 @@ function kraj(){
               let dan = parseInt(kombinacije[tacanCas].charAt(0));
               let cas = parseInt(kombinacije[tacanCas].charAt(1));
               if(dani[dan][cas]==""){
-              dani[dan][cas] = e.profesor;
+              dani[dan][cas] = e.profesor + " " + e.predmet;
               kombinacije.splice(tacanCas, 1);
               uneseno++;
           }
@@ -70,7 +74,7 @@ function kraj(){
               let dan = parseInt(kombinacije[tacanCas].charAt(0));
               let cas = parseInt(kombinacije[tacanCas].charAt(1));
               console.log(dani[dan][cas]);
-              if(dani[dan][cas]==""){dani[dan][cas] = e.profesor;
+              if(dani[dan][cas]==""){dani[dan][cas] = e.profesor + " " + e.predmet;
                   kombinacije.splice(tacanCas, 1);
                   uneseno++;}
           }
@@ -81,7 +85,7 @@ function kraj(){
               let tacanCas = Math.floor(Math.random() * kombinacije.length);
               let dan = parseInt(kombinacije[tacanCas].charAt(0));
               let cas = parseInt(kombinacije[tacanCas].charAt(1));
-              if(dani[dan][cas]==""){dani[dan][cas] = e.profesor;
+              if(dani[dan][cas]==""){dani[dan][cas] = e.profesor + " " + e.predmet;
                   kombinacije.splice(tacanCas, 1);
                   uneseno++;}
                   }
@@ -92,7 +96,7 @@ function kraj(){
           for(let i=0;i<5;i++){
               for(let j = 0;j<7;j++){
                   if(dani[i][j] === ""){
-                      dani[i][j] = e.profesor;
+                      dani[i][j] = e.profesor + " " + e.predmet;
                       let index = kombinacije.indexOf(parseInt(i+j));
                       kombinacije.splice(index, 1);
                       kraj = true;
@@ -117,7 +121,6 @@ function kraj(){
 /* Prije i poslije algoritma naredbe */
 
 document.querySelector("#Dodaj-Raspored-Profesor").addEventListener("click", ()=>{
-    console.log("gas");
     if(document.querySelector(".RASPORED").style.display == "none") document.querySelector(".RASPORED").style.display = "flex";
     else document.querySelector(".RASPORED").style.display = "none";
 });
@@ -131,7 +134,6 @@ const dodajProf = document.querySelector("#dodajProf");
 /*Dodavanje profesora*/ 
 dodajProf.addEventListener("click", e=>{
    if(profID.value!= "" && profIme.value!= "" && profNorma.value!= "" ){
-    console.log("gas");
     document.querySelector("#sekcija3 .Uneseno").innerHTML += `<div style ="margin-top: 10px;" class = "dodani-profesori">
     <h1 style = "margin-top: 10px;">ID:  ${profID.value}</h1>
     <div class = "crta"></div>
