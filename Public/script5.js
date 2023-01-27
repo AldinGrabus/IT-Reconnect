@@ -11,6 +11,7 @@ class Raspored {
 };
 let sedmicniCasovi = 0;
 document.querySelector(".main-btn").style.display = "none";
+document.getElementById("okvir").style.display="none";
 let lista = [
 ];
 let dani = [
